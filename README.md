@@ -3,7 +3,7 @@ Name: Joshua Baus
 
 <br>
 Note: Code is Located in CSC433Homework1/src. The files I wrote are Source.cpp, Utils.cpp, Includes.h.
-<br>
+<br><br>
 
 Errors:
 PPM P6 image processor does not remove comments, so images
