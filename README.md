@@ -1,5 +1,5 @@
 Name: Joshua Baus
-Email: joshuabaus@arizona.edu
+<br>Email: joshuabaus@arizona.edu
 
 
 Errors:
