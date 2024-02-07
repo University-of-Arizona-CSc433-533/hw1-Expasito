@@ -28,3 +28,7 @@ appears and that I used a more advanced topic for the course
 for this assignment.
 
 
+
+Below is a screenshot of the window with the image:
+![image](https://github.com/University-of-Arizona-CSc433-533/hw1-Expasito/assets/93100379/a9c80173-c196-4c5e-acfe-d1a96c56e711)
+
