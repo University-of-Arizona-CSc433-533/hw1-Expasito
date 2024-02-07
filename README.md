@@ -1,6 +1,8 @@
 Name: Joshua Baus
 <br>Email: joshuabaus@arizona.edu
 
+<br>
+Note: Code is Located in CSC433Homework1/src. The files I wrote are Source.cpp, Utils.cpp, Includes.h.
 
 Errors:
 PPM P6 image processor does not remove comments, so images
