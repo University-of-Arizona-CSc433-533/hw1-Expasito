@@ -8,7 +8,7 @@ Image loadImage(const char* fileName);
 
 
 // Width and height of the display/texture to draw to
-int width = 1280;
+int width = 1000;
 int height = 850;
 
 
@@ -16,6 +16,10 @@ int main() {
 
 	// Load our PPM P6 image
 	Image img = loadImage("Assets/pic1.ppm");
+
+	// Make the window's aspect ratio match the image being imported
+	float aspect = img.width / (float)img.height;
+	height = width / aspect;
 
 
 	// Create the window and also initalize anything for rendering
