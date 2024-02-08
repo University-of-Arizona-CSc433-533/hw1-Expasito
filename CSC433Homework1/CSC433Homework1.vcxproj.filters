@@ -1356,7 +1356,7 @@
     <None Include="Assets\pic1.ppm" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="TheoreticalQuestions\Text.txt" />
+    <Text Include="TheoreticalQuestions\TheoreticalAnswers.txt" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="Depend\lib\glfw3dll.lib" />

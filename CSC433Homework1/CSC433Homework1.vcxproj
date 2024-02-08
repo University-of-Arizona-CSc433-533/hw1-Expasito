@@ -586,7 +586,7 @@
     <None Include="TheoreticalQuestions\README.md" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="TheoreticalQuestions\Text.txt" />
+    <Text Include="TheoreticalQuestions\TheoreticalAnswers.txt" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="Depend\lib\glfw3.lib" />
