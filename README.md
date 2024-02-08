@@ -3,6 +3,7 @@ Name: Joshua Baus
 
 <br>
 Note: Code is Located in CSC433Homework1/src. The files I wrote are Source.cpp, Utils.cpp, Includes.h.
+<br>Answers to theoretical questions are at CSC433Homework1/TheoreticalQuestions
 <br><br>
 
 Errors:
@@ -31,4 +32,8 @@ for this assignment.
 
 Below is a screenshot of the window with the image:
 ![image](https://github.com/University-of-Arizona-CSc433-533/hw1-Expasito/assets/93100379/a9c80173-c196-4c5e-acfe-d1a96c56e711)
+
+<br>
+Another image with performance metrics in console
+![image](https://github.com/University-of-Arizona-CSc433-533/hw1-Expasito/assets/93100379/d2e57cad-89db-463d-86a3-5a526d70ab71)
 
