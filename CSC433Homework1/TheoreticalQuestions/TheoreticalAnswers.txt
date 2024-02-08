@@ -1,0 +1,99 @@
+
+1.
+Parallel to Parallel:
+Translate, Rotate, Reflect, Shear, Scale
+
+Maintain angles:
+Translate, Rotate, Reflect, Scale
+
+2.
+
+(a). 
+p = (x, y), M*p = (1*x + 0*y, 1.5*x + 1*y) = (x, 1.5x + y).
+This is a sheer transformation
+
+(b).
+p = (x,y), M*p = (1*x + 0*y, -1.5*x + 1*y) = (x, -1.5x + y)
+This is also a sheer transformation
+
+(c).
+p = (x,y), M*p = (1*x + 0*y, 0*x + -1*y) = (x, -y).
+This is a reflection transformation over the x axis
+
+(d).
+p = (x,y), M*p = (-2*x + 0*y, 0*x + -2*y) = (-2x, -2y)
+This is a reflection across the x and y axes and scaling by a factor of 2.
+In reality, this is really just a scaling transformation by -2.
+
+(e).
+p = (x,y), M*p = (cosT*x -sinT*y, sinT*x + cosT*y)
+This is the standard rotation matrix. The matrix rotates p by
+theta degrees counter clockwise about the origin.
+
+(f).
+p = (x,y), M*p = (a*x + -sqrt(1-a*a)*y, sqrt(1-a*a)*x + a*y)
+This is another form of the rotation matrix with a maximum rotation of 90 degrees counter clockwise.
+When a = 0, the value of p is rotated by 90 degrees, when p is 1, there is no rotation
+
+(g).
+Thinking process
+p = (x, y).
+R(-T) * p, rotates p by theta degrees clockwise.
+Reflect * R(-T) * p, reflects the rotated point over the x axis.
+R(T) * Reflect * R(-T) *p, then rotates the reflected image another theta degrees but counter clockwise
+
+This set of transformations reflects p across the x axis and then rotates it 2*theta
+degrees counter clockwise. So at theta = 0, the point p is reflected across the 
+x axis. At theta = 90 degrees, the point is rotated 180 degrees, which also appears
+as reflected over the y axis. Values of theta inbetween just rotate the reflected
+image counter clockwise. 
+
+
+3.
+(a).
+p = (x, y, 1), M*p = (2x, 2y, 1)
+This is a scale transformation. It scales the x and y value by 2
+
+(b).
+p = (x, y, 1), M*p = (2x, 2y, .5) = (4x, 4y, 1)
+This is a scale transformation. It scales the x and y value by 4 due to changing the 
+homogeneous coordinate value
+
+(c).
+p = (x, y, 1), M*p = (x, .5x + y, 1)
+This is a sheer transformation.
+
+(d).
+p = (x, y, 1), M*p = (cosT*x -sinT*y, sinT*x + cosT*y, 1)
+This is a rotation matrix by theta degrees counter-clockwise
+
+4.
+Since this matrix is the standard rotation matrix, giving a value of theta
+rotates a point by theta counter clockwise. A negative theta will then rotate
+clockwise, so the inverse of this matrix is:
+[
+cos(-theta)  -sin(-theta)
+sin(-theta)    cos(-theta)
+]
+
+As a matrix multiplication R(-T) * R(T) = Identity matrix
+
+
+5.
+For R2,
+
+Start with X vector and Y vector which are the standard vectors for the old coordinate systems.
+X = [1 0], Y = [0 1] with our regular coordinate system.
+
+When multiplying by R(T) which is our rotation matrix, we get:
+R(T) * X = [cos(T) sin(T)]; This will be called U,
+R(T) * Y = [-sin(T) cos(T)]; This will be called V,
+U and V are just the columns of the rotation matrix
+
+For a point p = (x, y) = x * X + y * Y. This just represents the vector as a sum of
+a scalar * the standard vector -> x * [1 0] + y * [0 1] = (x, y)
+
+R(T) * p = R(T) * (x * X + y * Y) = x * R(T) * X  +  y * R(T) * Y => x * U + y * V
+So overall, this is just x scalar * first column of rotation matrix plus y scalar * second column of rotation matrix
+
+And that is the change of basis method for rotation
